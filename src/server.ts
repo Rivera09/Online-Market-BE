@@ -6,9 +6,8 @@ import connectDB from "./config/db";
 dotenv.config();
 connectDB();
 
-dotenv.config();
 const app = express();
-app.use(cors);
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (_req, res) => {
